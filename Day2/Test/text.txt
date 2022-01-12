@@ -1,0 +1,1 @@
+Bundler is a package manager for ruby, it handles ruby libraries or "gems" as they are known. To install bundler, enter the following: package manager for ruby, it handles ruby libraries or "gems" as they are known. To install bundler, enter the following: To install bundler, enter the following:
