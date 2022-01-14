@@ -51,18 +51,24 @@ class Product
     end
   end
 
- #spain_backpacking = Product.new("Banana", 234345676 , 2)
-banana = Banana.new("Banana", 234345676 , 2)
-banana.info
+class Cart
+    def products
+        banana = Banana.new("Banana", 1 , 2)
+        banana.info
+       
+        apple = Apple.new("Apple", 2 , 1.5)
+        apple.info
+        
+        chips = Chips.new("Chips", 3 , 4.5)
+        chips.info
+        
+        bread = Bread.new("Bread", 4 , 1.8)
+        bread.info
+        
+        milk = Milk.new("Milk", 5 , 3.5)
+        milk.info
+    end
+end
 
-apple = Apple.new("Apple", 34242676 , 1.5)
-apple.info
-
-chips = Chips.new("ChipsChio", 34545676 , 4.5)
-chips.info
-
-bread = Bread.new("SuperBread", 299345676 , 1.8)
-bread.info
-
-milk = Milk.new("Milk", 234389676 , 3.5)
-milk.info
+object = Cart.new
+object.products
