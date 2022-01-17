@@ -5,20 +5,20 @@
 # The game ends when the user guesses the number correctly. 
 # You display 'You Win! It took you N attempts to guess thee number correctly.'
 
-     random_number = rand(1..100)
-     print "The random number is #{random_number} \n"
+     random_number = rand(100)
+     #print "The random number is #{random_number} \n"
 
      puts "Enter a number"
+     counter = 0
      input_number = gets.chomp.to_i
      while  input_number != random_number
           if input_number > random_number
-               puts "number too high"
-               puts "Enter another number"
-               input_number = gets.chomp.to_i
-          elsif  input_number <  random_number
-               puts "number is low"
-               puts "Enter another number"
-               input_number = gets.chomp.to_i
+               puts "number too high"           
+          else 
+               puts "number is low"              
           end
+          puts "Enter another number"
+          input_number = gets.chomp.to_i
+          counter += 1
      end
-     print "You Win! \n"  
+     print "You Win!  After #{counter} tries.\n"  
